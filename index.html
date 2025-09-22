@@ -9,17 +9,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-
-<body style="padding: 0; margin: 0; min-height: 100vh; position: relative;">
-    <div style="background-color: #e3f2fd; padding: 40px;"> <!--franja arriba-->
-       <div class="container text-end">
-                                                                                             <!-- Botón para abrir el modo -->
-      <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createPostModal">
-      <i class="bi bi-plus-circle"></i> Create Post
-      </button>
-
-<!-- crear publicacion -->
+<body>
+<nav class="navbar navbar-expand-lg navbar-light instagram-header">
+  <div class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <i class="bi bi-instagram fs-4 me-2"></i>
+                <span class="fs-5 fw-bold">Instagram</span>
+            </a>
+            <div class="d-flex align-items-center">
+                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">Crear nueva publicación</button>
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-gear-fill"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+</nav>
 <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -51,58 +66,9 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-success">Publish</button>
       </div>
-
     </div>
   </div>
 </div>
-<div class="container">
-  <div class="row align-items-center g-3">
-    
-    <!-- Ícono de Instagram -->
-    <div class="col-auto">
-      <i class="bi bi-instagram" style="font-size: 3rem; color: #e4405f;"></i>
-    </div>
-    
-    <!-- Texto -->
-    <div class="col-auto">
-      <span style="font-size: 1.2rem;">Instagram</span>
-    </div>
-    
-  </div>
-</div>
-</div>
-    </div>
-</div>
-    
-    </div>
-    </div>
-       </div> 
-
-                                                                  <!-- Botón de configuración cuadrado, en esquina superior derecha -->
-        <div class="dropdown" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-                style="width: 45px; height: 45px; border-radius: 0;" title="Configuración">
-                <i class="bi bi-gear-fill"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i> Perfil</a></li>
-                <li><a class="dropdown-item" href="#"><i class="bi bi-sliders"></i> Ajustes</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item text-danger" href="#"><i class="bi bi-box-arrow-right"></i> Salir</a></li>
-            </ul>
-        </div>
-    
-    </div>
-    
-    <div> <br> <br> <br> <!-- salto de la fanja azul claro arriba-->
-     
-    
-
-
-        
-
 <!--imagen judo-->
   <div class="border rounded"                                    
      style="width: 500px; height: 600px; margin: 20px auto;">
@@ -115,21 +81,21 @@
     class="rounded d-block mx-auto" 
     style="width: 480px; height: auto; margin-top: 10px;" 
     alt="Atleta en acción"
-  > <div style="margin-left: 20px;margin-top: 10px;"><b>600 Likes</b></div>
-  <div style="margin-left: 20px; margin-top: 10px;"> <b>judo_world</b> ¡El judo es más que un deporte, es una forma de vida! 🥋💪 #JudoLife #MartialArts</di  v>
-  </div>  
+  > 
+    <div style="margin-left: 20px;margin-top: 10px;"><b>600 Likes</b></div>
+    <div style="margin-left: 20px; margin-top: 10px;"> 
+      <b>judo_world</b> ¡El judo es más que un deporte, es una forma de vida! 🥋💪 #JudoLife #MartialArts
+    </div>
   </div>
-        
-</div>
+</body>
+</html>
+  
+   
 
 
 
-
-
-
-<!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 
 </html>
