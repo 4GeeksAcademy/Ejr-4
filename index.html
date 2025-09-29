@@ -2,95 +2,201 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Botón de Configuración - Derecha</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Botón de Configuración - Derecha</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light instagram-header">
+  <nav class="navbar navbar-expand-lg navbar-light instagram-header">
   <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <i class="bi bi-instagram fs-4 me-2"></i>
-                <span class="fs-5 fw-bold">Instagram</span>
-            </a>
-            <div class="d-flex align-items-center">
-                <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">Crear nueva publicación</button>
-                <div class="dropdown">
-                    <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-gear-fill"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Profile</a></li>
-                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-                    </ul>
-                </div>
-            </div>
-    </div>
-</nav>
-<div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      
-      <!-- Header -->
-      <div class="modal-header">
-        <h5 class="modal-title" id="createPostLabel">Create a new post</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <i class="bi bi-instagram fs-4 me-2"></i>
+      <span class="fs-5 fw-bold">Instagram</span>
+    </a>
+    <div class="d-flex align-items-center">
+      <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">Crear nueva
+        publicación</button>
+      <div class="dropdown">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="bi bi-gear-fill"></i>
+        </button>
 
-      <!-- Body -->
-      <div class="modal-body">
-        <div class="mb-3">
-          <label for="caption" class="form-label">Caption:</label>
-          <textarea class="form-control" id="caption" rows="3" placeholder="Add the caption of your post here"></textarea>
-        </div>
-        <div class="d-flex gap-2 mb-3">
-          <button type="button" class="btn btn-outline-secondary btn-sm">
-            <i class="bi bi-camera"></i>
-          </button>
-          <button type="button" class="btn btn-outline-secondary btn-sm">
-            <i class="bi bi-geo-alt"></i>
-          </button>
-        </div>
-      </div>
-
-      <!-- Footer con botones a los extremos -->
-      <div class="modal-footer justify-content-between">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-success">Publish</button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accessibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+        </ul>
       </div>
     </div>
   </div>
-</div>
-<!--imagen judo-->
-  <div class="border rounded"                                    
-     style="width: 500px; height: 600px; margin: 20px auto;">
-     
-     <div style="margin-left: 10px; margin-top: 30px;"><h3>JUDO</h3></div> <!--descripcion caja de instagram izquierda -->
-     
+  </nav>
+  <div class="modal fade" id="createPostModal" tabindex="-1" aria-labelledby="createPostLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <!-- Header -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="createPostLabel">Create a new post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Body -->
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="caption" class="form-label">Caption:</label>
+            <textarea class="form-control" id="caption" rows="3"
+              placeholder="Add the caption of your post here"></textarea>
+          </div>
+          <div class="d-flex gap-2 mb-3">
+            <button type="button" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-camera"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary btn-sm">
+              <i class="bi bi-geo-alt"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Footer con botones a los extremos -->
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+        role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-ui-checks-grid"></i></button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+        role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i
+          class="bi bi-bounding-box-circles"></i></button>
+    </li>
+  </ul>
+
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+      <div class="border rounded" style="width: 500px; height: 600px; margin: 20px auto;">
+
+        <div style="margin-left: 10px; margin-top: 30px;">
+          <h3>JUDO</h3>
+        </div> <!--descripcion caja de instagram izquierda -->
+
+
+        <img src="https://img.olympics.com/images/image/private//t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+          class="rounded d-block mx-auto" style="width: 480px; height: auto; margin-top: 10px;" alt="Atleta en acción">
+        <div style="margin-left: 20px;margin-top: 10px;"><b>600 Likes</b></div>
+        <div style="margin-left: 20px; margin-top: 10px;">
+          <b>judo_world</b> ¡El judo es más que un deporte, es una forma de vida! 🥋💪 #JudoLife #MartialArts
+        </div>
+      </div>
+      <div class="border rounded" style="width: 500px; height: 600px; margin: 20px auto;">
+
+        <div style="margin-left: 10px; margin-top: 30px;">
+          <h3>JUDO</h3>
+        </div> <!--descripcion caja de instagram izquierda -->
+
+
+        <img src="https://img.olympics.com/images/image/private//t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+          class="rounded d-block mx-auto" style="width: 480px; height: auto; margin-top: 10px;" alt="Atleta en acción">
+        <div style="margin-left: 20px;margin-top: 10px;"><b>600 Likes</b></div>
+        <div style="margin-left: 20px; margin-top: 10px;">
+          <b>judo_world</b> ¡El judo es más que un deporte, es una forma de vida! 🥋💪 #JudoLife #MartialArts
+        </div>
+      </div>
+      <div class="border rounded" style="width: 500px; height: 600px; margin: 20px auto;">
+
+        <div style="margin-left: 10px; margin-top: 30px;">
+          <h3>JUDO</h3>
+        </div> <!--descripcion caja de instagram izquierda -->
+
+
+        <img src="https://img.olympics.com/images/image/private//t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+          class="rounded d-block mx-auto" style="width: 480px; height: auto; margin-top: 10px;" alt="Atleta en acción">
+        <div style="margin-left: 20px;margin-top: 10px;"><b>600 Likes</b></div>
+        <div style="margin-left: 20px; margin-top: 10px;">
+          <b>judo_world</b> ¡El judo es más que un deporte, es una forma de vida! 🥋💪 #JudoLife #MartialArts
+        </div>
+      </div>
+    </div>
+    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+
+      <!-- <div class="container"> -->
+      <div class="row g-3"> <!-- g-3 separacion entre ellos -->
+
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+
+
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+        <div class="col-12 col-md-4">
+          <img src="https://img.olympics.com/images/image/private/t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7"
+            class="rounded img-fluid" alt="Atleta en acción">
+        </div>
+
+      </div>
+    </div>
+  </div>
   
-    <img 
-    src="https://img.olympics.com/images/image/private//t_s_w440/f_auto/primary/lgpcrz0knsburbdac6b7" 
-    class="rounded d-block mx-auto" 
-    style="width: 480px; height: auto; margin-top: 10px;" 
-    alt="Atleta en acción"
-  > 
-    <div style="margin-left: 20px;margin-top: 10px;"><b>600 Likes</b></div>
-    <div style="margin-left: 20px; margin-top: 10px;"> 
-      <b>judo_world</b> ¡El judo es más que un deporte, es una forma de vida! 🥋💪 #JudoLife #MartialArts
-    </div>
-  </div>
+
+
+
+
+
+
+
+
 </body>
+
 </html>
-  
-   
+
+
 
 
 
